@@ -53,8 +53,8 @@ def update_contact(user_id):
         if existing_contact:
             return jsonify({"message": "Email already exists!"}), 400
 
-    contact.first_name = data.get("firstName", contact.first_name)
-    contact.last_name = data.get("lastName", contact.last_name)
+    contact.first_name = data.get("firstName", contact.firstName)
+    contact.last_name = data.get("lastName", contact.lastName)
     contact.email = data.get("email", contact.email)
 
     try:
