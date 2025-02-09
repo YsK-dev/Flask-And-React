@@ -1,6 +1,3 @@
-Here’s a comprehensive `README.md` for your project. It includes an overview, setup instructions, usage details, and more. Feel free to customize it further to suit your needs.
-
----
 
 # Contact Management App
 
@@ -41,7 +38,7 @@ A full-stack web application for managing contacts. Built with **React** for the
 ```
 contact-management-app/
 ├── backend/
-│   ├── app.py               # Flask application
+│   ├── main.py               # Flask application
 │   ├── models.py            # Database models
 │   ├── config.py            # Flask and database configuration
 │   └── requirements.txt     # Python dependencies
@@ -52,8 +49,10 @@ contact-management-app/
 │   │   │   ├── ContactForm.jsx
 │   │   │   └── ContactList.jsx
 │   │   ├── App.jsx          # Main application component
-│   │   ├── index.js         # Entry point
+│   │   ├── index.css        # Style
 │   │   └── App.css          # Styles for the app
+|   |   └── ContactForm.jsx  # Contact form
+|   |   └── Contactlist.jsx  # Contact list
 │   ├── package.json         # Node.js dependencies
 │   └── README.md            # Frontend-specific README
 └── README.md                # Main project README
@@ -78,20 +77,14 @@ contact-management-app/
 
 2. Install Python dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install flask flask-cors
    ```
 
-3. Set up the database:
-   ```bash
-   python
-   >>> from app import db
-   >>> db.create_all()
-   >>> exit()
-   ```
 
-4. Run the Flask server:
+
+3. Run the Flask server:
    ```bash
-   python app.py
+   python main.py
    ```
    The backend will be available at `http://127.0.0.1:5000`.
 
@@ -109,9 +102,9 @@ contact-management-app/
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
-   The frontend will be available at `http://localhost:3000`.
+   The frontend will be available at `http://localhost:5173`. 
 
 ---
 
@@ -151,10 +144,12 @@ contact-management-app/
 ## Screenshots
 
 ### Contact List
-![Contact List](screenshots/contact-list.png)
+<img width="719" alt="Screenshot 2025-02-09 at 12 26 48" src="https://github.com/user-attachments/assets/456a0fd6-5b08-4ee7-a4c2-11ab299bd0fc" />
+
 
 ### Create/Update Modal
-![Create/Update Modal](screenshots/contact-form.png)
+<img width="924" alt="Screenshot 2025-02-09 at 13 01 23" src="https://github.com/user-attachments/assets/2c368c34-cb06-4ae1-a8ff-190754234204" />
+
 
 ---
 
@@ -180,13 +175,7 @@ contact-management-app/
 
 ## Contributing
 
-Contributions are welcome! Follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeatureName`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeatureName`).
-5. Open a pull request.
+Contributions are welcome! :
 
 ---
 
